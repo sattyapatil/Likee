@@ -12,7 +12,7 @@
 1. First create virtual env and activate it.
   1. `sudo apt install python3-virtualenv`
   2. `virtualenv -p python3 venv`
-  3. `source ./envname/bin/activate`
+  3. `source ./venv/bin/activate`
 2. Install all required packages `pip3 install -r requirements.txt`
 
 ## Test application
