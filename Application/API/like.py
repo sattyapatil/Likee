@@ -33,8 +33,6 @@ async def add_likes(likes: LikesIn, db: Session = Depends(get_db)):
 
 @app.get('/like/', response_model=List[LikesIn])
 async def get_likes(db: Session = Depends(get_db)):
-    for i in get_like(db):
-        print(i.id)
     return get_like(db)
 
 
@@ -46,6 +44,11 @@ def create_likes(db: Session, likes: LikesIn):
     db_like = DBlikes(**likes.dict())
 
     """update people db"""
+
+    if likes.from_user == likes.to_user:
+        '''person can not like himself'''
+        return {'message': '{0} can not like himself'.format(likes.from_user),
+                'from_user': likes.from_user, "to_user": likes.to_user}
 
     # Get person how is liking
     db_person_who_like = db.query(DBPeople).get(likes.from_user)
