@@ -5,16 +5,21 @@
 ### Clone Rapository
 
 1. `git clone https://github.com/sattyapatil/Likee.git`
-2. Then do to the main application folder `cd ./LikeMe`
+2. Then do to the main application folder `cd ./Likee`
 
 ### Installation
 
 1. First create virtual env and activate it.
+  1. `sudo apt install python3-virtualenv`
+  2. `virtualenv -p python3 venv`
+  3. `source ./envname/bin/activate`
 2. Install all required packages `pip3 install -r requirements.txt`
 
-## Run application
+## Test application
+1. Then run this command `pytest`
 
-1. `uvicorn Application.app:app --reload`
+## Run application
+1. Then run this command `uvicorn Application.app:app --reload`
 
 ## User Guide
 
