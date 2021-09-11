@@ -5,7 +5,7 @@
 ### Clone Rapository
 
 1. `git clone https://github.com/sattyapatil/Likee.git`
-2. Then do to the main application folder `cd ./Likeee`
+2. Then do to the main application folder `cd ./Likee`
 
 ### Installation
 
