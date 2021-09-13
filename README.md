@@ -5,7 +5,7 @@
 ### Clone Rapository
 
 1. `git clone https://github.com/sattyapatil/Likee.git`
-2. Then do to the main application folder `cd ./Likee`
+2. Then go to the main application folder `cd ./Likee`
 
 ### Installation
 
@@ -23,6 +23,6 @@
 
 ## User Guide
 
-1. After starting application go to the [localhost/docs](http://127.0.0.1:8000/docs)
-2. We can see all the api documentation there
-3. We can test all api endpoints for here
+1. After starting application go to the [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
+2. We can see all the api documentation here
+3. We can test all api endpoints from here
