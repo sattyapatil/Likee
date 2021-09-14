@@ -1,4 +1,4 @@
-# LikeMe
+# Likee
 
 ## Clone and Installation
 
